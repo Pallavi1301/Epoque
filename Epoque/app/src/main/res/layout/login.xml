@@ -22,8 +22,9 @@
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="150dip"
+            android:layout_marginTop="20dip"
             android:padding="10dip"
+            android:layout_below="@+id/imageView2"
             android:inputType="text"
             android:layout_marginLeft="10dip"
             android:layout_marginRight="10dip"
@@ -31,19 +32,19 @@
             android:hint="Registration Id"
             android:textColorHint="#c3c3c3"
             android:textColor="#ffffff"
-            android:drawableLeft="@drawable/registration_id"
+            android:drawableLeft="@drawable/reg"
             android:drawablePadding="10dip"
             android:id="@+id/editText"
             android:singleLine="true"/>
 
         <EditText
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:drawableLeft="@drawable/password"
+            android:drawableLeft="@drawable/pass"
             android:drawablePadding="10dip"
-            android:layout_marginTop="192dip"
+            android:layout_below="@+id/editText"
+            android:layout_marginTop="1dip"
             android:layout_marginLeft="10dip"
             android:layout_marginRight="10dip"
             android:padding="10dip"
@@ -54,10 +55,12 @@
             android:id="@+id/editText1"
             android:singleLine="true"/>
         <TextView
+            android:id="@+id/editText2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="250dip"
+            android:layout_below="@+id/editText1"
+            android:layout_marginTop="20dip"
             android:padding="5dip"
             android:text="Forgot Password?"
             android:textColor="#C0C0C0"
@@ -65,15 +68,15 @@
             />
 
         <Button
+            android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
             android:textSize="20sp"
             android:textColor="#ffffff"
             android:background="#e603ac89"
-            android:elevation="2dip"
+            android:elevation="4dip"
             android:layout_alignParentBottom="true"
-            android:id="@+id/btnlog"
             />
 
         <ImageView

@@ -33,7 +33,7 @@ public class LoginFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         sp=getActivity().getSharedPreferences("Epoque2k16", Context.MODE_PRIVATE);
-        Button button= (Button) getActivity().findViewById(R.id.btnlog);
+        Button button= (Button) getActivity().findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
