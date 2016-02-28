@@ -31,7 +31,7 @@
             android:hint="Registration Id"
             android:textColorHint="#c3c3c3"
             android:textColor="#ffffff"
-            android:drawableLeft="@drawable/Registration_id"
+            android:drawableLeft="@drawable/registration_id"
             android:drawablePadding="10dip"
             android:id="@+id/editText"
             android:singleLine="true"/>
@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:drawableLeft="@drawable/Password"
+            android:drawableLeft="@drawable/password"
             android:drawablePadding="10dip"
             android:layout_marginTop="192dip"
             android:layout_marginLeft="10dip"
@@ -73,6 +73,7 @@
             android:background="#e603ac89"
             android:elevation="2dip"
             android:layout_alignParentBottom="true"
+            android:id="@+id/btnlog"
             />
 
         <ImageView
