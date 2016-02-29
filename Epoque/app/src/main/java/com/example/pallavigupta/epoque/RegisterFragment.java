@@ -61,7 +61,12 @@ public class RegisterFragment extends Fragment {
                 @Override
                 public void onTaskCompleted(String result, int resultType) {
                     try {
-                            Toast.makeText(getActivity(), "You have successfully registered with registration Id"+result, Toast.LENGTH_SHORT).show();
+                        if(!result.equals("")&& !result.isEmpty()) {
+                            Toast.makeText(getActivity(), "You have successfully registered with registration Id" + result, Toast.LENGTH_SHORT).show();
+                        }else
+                        {
+                            Toast.makeText(getActivity(), "Please register again", Toast.LENGTH_SHORT).show();
+                        }
                     } catch (Exception e) {
                         e.printStackTrace();
                         // TODO: handle exception
