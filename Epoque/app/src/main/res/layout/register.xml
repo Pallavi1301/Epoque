@@ -64,13 +64,10 @@
             android:textColor="#ffffff"
             android:background="#e603ac89"
             android:elevation="2dip"
-<<<<<<< HEAD
             android:id="@+id/btnlog"
             android:layout_alignParentBottom="true"
-=======
             android:layout_marginTop="8dip"
             android:layout_below="@+id/editText4"
->>>>>>> origin/master
             />
 
         <ImageView
