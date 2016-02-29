@@ -64,7 +64,8 @@
             android:textColor="#ffffff"
             android:background="#e603ac89"
             android:elevation="2dip"
-            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dip"
+            android:layout_below="@+id/editText4"
             />
 
         <ImageView
@@ -72,7 +73,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/imageView2"
             android:src="@drawable/logo_1"
-            android:layout_marginTop="10dip"
+            android:layout_marginTop="5dip"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="40dip" />
 
