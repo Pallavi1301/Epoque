@@ -66,7 +66,6 @@
         android:layout_below="@+id/text2"
         android:id="@id/button"
         />
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -137,6 +136,19 @@
                 android:textColor="#ffffff"
                 android:textSize="20sp">
             </Button>
+                    <Button
+            android:id="@+id/button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:background="#e603ac89"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Login"
+            android:textColor="#ffffff"
+            android:textSize="20sp">
+        </Button>
 
             <View
                 android:layout_width="1dp"
@@ -158,5 +170,17 @@
             </Button>
         </LinearLayout>
 -->
-
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:background="#e603ac89"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Register"
+            android:textColor="#ffffff"
+            android:textSize="20sp">
+        </Button>
 </RelativeLayout>

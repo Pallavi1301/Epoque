@@ -5,7 +5,11 @@
     android:layout_height="match_parent"
     android:background="@drawable/login1">
 
+<<<<<<< HEAD
     <ScrollView
+=======
+    <RelativeLayout
+>>>>>>> origin/master
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/scrollView">
@@ -57,6 +61,7 @@
                 android:singleLine="true"
                 android:id="@+id/editText1" />
 
+<<<<<<< HEAD
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -69,6 +74,21 @@
                 android:layout_marginTop="8dip"
                 android:layout_below="@+id/editText4"
                 />
+=======
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:background="#e603ac89"
+            android:elevation="2dip"
+            android:id="@+id/btnlog"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dip"
+            android:layout_below="@+id/editText4"
+            />
+>>>>>>> origin/master
 
             <ImageView
                 android:layout_width="wrap_content"
