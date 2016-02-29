@@ -84,7 +84,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/imageView2"
             android:src="@drawable/logo_1"
-            android:layout_marginTop="15dip"
+            android:layout_marginTop="10dip"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="40dip" />
     </RelativeLayout>
