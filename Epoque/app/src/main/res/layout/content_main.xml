@@ -5,10 +5,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="50dip"
     android:background="@drawable/login1"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dip"
+        android:background="@drawable/login1">
+
 
     <ImageView
         android:layout_width="wrap_content"
@@ -16,7 +27,7 @@
         android:src="@drawable/logo_1"
         android:id="@+id/imageView3"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="92dp" />
+        android:layout_marginTop="32dp" />
     <TextView
         android:id="@+id/text"
         android:layout_width="match_parent"
@@ -29,7 +40,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         android:padding="8dip"
-        android:layout_below="@id/imageView3"
+        android:layout_below="@+id/imageView3"
         />
     <View
         android:layout_width="match_parent"
@@ -64,7 +75,7 @@
         android:layout_marginTop="48dip"
         android:background="@drawable/textview_background"
         android:layout_below="@+id/text2"
-        android:id="@id/button"
+        android:id="@+id/button"
         />
     <TextView
         android:layout_width="match_parent"
@@ -89,98 +100,19 @@
         android:background="@drawable/textview_background"
         android:layout_marginTop="16dip"
         android:id="@+id/button2"/>
-<!--
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:id="@+id/button4"
-        android:textColor="#ffffff"
-        android:textSize="20sp"
-        android:padding="10dip"
-        android:background="@drawable/button_background"
-        android:layout_below="@+id/imageView3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="87dp" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:background="#e603ac89"
+        android:gravity="center"
+        android:padding="8dp"
         android:text="Register"
         android:textColor="#ffffff"
-        android:textSize="20sp"
-        android:background="@drawable/button_background"
-        android:id="@+id/button5"
-        android:layout_below="@+id/button4"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp" />
--->
-<!--
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="50dp"
-            android:layout_alignParentBottom="true"
-            android:orientation="horizontal"
-            android:weightSum="1">
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="0dip"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_weight="0.5"
-                android:background="#e603ac89"
-                android:gravity="center"
-                android:padding="8dp"
-                android:text="Login"
-                android:textColor="#ffffff"
-                android:textSize="20sp">
-            </Button>
-                    <Button
-            android:id="@+id/button"
-            android:layout_width="0dip"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_weight="0.5"
-            android:background="#e603ac89"
-            android:gravity="center"
-            android:padding="8dp"
-            android:text="Login"
-            android:textColor="#ffffff"
-            android:textSize="20sp">
-        </Button>
-
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#ffffff" />
-
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="0dip"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_weight="0.5"
-                android:background="#e603ac89"
-                android:gravity="center"
-                android:padding="8dp"
-                android:text="Register"
-                android:textColor="#ffffff"
-                android:textSize="20sp">
-            </Button>
-        </LinearLayout>
--->
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="0dip"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_weight="0.5"
-            android:background="#e603ac89"
-            android:gravity="center"
-            android:padding="8dp"
-            android:text="Register"
-            android:textColor="#ffffff"
-            android:textSize="20sp">
-        </Button>
-</RelativeLayout>
+        android:textSize="20sp">
+    </Button>
+    </RelativeLayout>
+</ScrollView>
+</>
