@@ -3,12 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login1">
-    <include
-        layout="@layout/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-    </include>
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -16,11 +11,11 @@
         android:padding="10dip"
         android:textSize="25sp"
         android:fontFamily="serif"
-        android:textStyle="bold"
-        android:text="Events Registration"
-        android:layout_marginTop="15dip"
+        android:text="Event Registration"
+        android:background="@drawable/textview_background"
+        android:layout_marginTop="25dip"
         android:id="@+id/textView2"
-        android:textColor="#c0c0c0"
+        android:textColor="#aac0c0c0"
         android:layout_gravity="center_horizontal" />
 
     <RelativeLayout
@@ -46,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView"
-            android:layout_marginTop="25dip"
+            android:layout_marginTop="35dip"
             android:text="Institute Level"
             android:layout_marginLeft="20dip"
             android:layout_marginRight="20dip"
