@@ -4,10 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login1">
-    <include
-        layout="@layout/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,7 +13,7 @@
         android:layout_marginBottom="40dip"
         android:layout_marginTop="35dip"
         android:background="#772d2d2d"
-        >
+      >
 
         <EditText
 
@@ -68,7 +65,10 @@
             android:layout_alignParentBottom="true"
             android:layout_marginTop="8dip"
             android:layout_below="@+id/editText4"
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
             />
 
         <ImageView
