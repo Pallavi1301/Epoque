@@ -29,7 +29,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         android:padding="8dip"
-        android:layout_below="@id/imageView3"
+        android:layout_below="@+id/imageView3"
         />
     <View
         android:layout_width="match_parent"
@@ -64,7 +64,7 @@
         android:layout_marginTop="48dip"
         android:background="@drawable/textview_background"
         android:layout_below="@+id/text2"
-        android:id="@id/button"
+        android:id="@+id/button"
         />
     <TextView
         android:layout_width="match_parent"

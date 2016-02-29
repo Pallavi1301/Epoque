@@ -9,16 +9,19 @@ public class Event_list_Element  {
     String Date;
     String Time;
     String Venue;
+    int Max,Min;
 
     int ID;
 
-    public Event_list_Element(String Time,String Name,String Date,String Venue,int ID)
+    public Event_list_Element(String Time,String Name,String Date,String Venue,int ID,int Max,int Min)
     {
         this.Name=Name;
         this.Date=Date;
         this.Time=Time;
         this.Venue=Venue;
         this.ID=ID;
+        this.Min=Min;
+        this.Max=Max;
     }
 
     public String getName() {
@@ -39,5 +42,13 @@ public class Event_list_Element  {
 
     public int getID() {
         return ID;
+    }
+
+    public int getMax() {
+        return Max;
+    }
+
+    public int getMin() {
+        return Min;
     }
 }

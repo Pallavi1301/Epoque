@@ -6,6 +6,8 @@ import android.content.SharedPreferences;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.text.method.CharacterPickerDialog;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -21,19 +23,17 @@ import org.json.JSONObject;
 /**
  * Created by USER on 02/24/2016.
  */
-public class LoginFragment extends Fragment {
+public class LoginFragment extends AppCompatActivity {
     SharedPreferences sp;
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.login,container,false);
-    }
 
     @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        sp=getActivity().getSharedPreferences("Epoque2k16", Context.MODE_PRIVATE);
-        Button button= (Button) getActivity().findViewById(R.id.button);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.login);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        sp=getSharedPreferences("Epoque2k16", Context.MODE_PRIVATE);
+        Button button= (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,10 +46,10 @@ public class LoginFragment extends Fragment {
         Constant co=new Constant();
         String url=co.url;
         EditText ed1,ed2;
-        ed1= (EditText) getActivity().findViewById(R.id.editText);
-        ed2= (EditText) getActivity().findViewById(R.id.editText1);
+        ed1= (EditText) findViewById(R.id.editText);
+        ed2= (EditText) findViewById(R.id.editText1);
         try {
-            new HitJSPService(getActivity(), null, new TaskCompleted() {
+            new HitJSPService(this, null, new TaskCompleted() {
 
                 @Override
                 public void onTaskCompleted(String result, int resultType) {
@@ -57,16 +57,16 @@ public class LoginFragment extends Fragment {
                         JSONObject jo = new JSONObject(result);
                         JSONArray ja = jo.getJSONArray("result");
                         JSONObject jo1 = ja.getJSONObject(0);
-                        sp.edit().putInt("Id", Integer.parseInt(jo1.getString("id"))).commit();
+                        sp.edit().putString("dept", jo1.getString("id")).commit();
                         sp.edit().putBoolean("isTrue", true).commit();
-                        Toast.makeText(getActivity(), "Login with Id "+Integer.parseInt(jo1.getString("id")), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginFragment.this, "Login with Id "+Integer.parseInt(jo1.getString("id")), Toast.LENGTH_SHORT).show();
                         } catch (Exception e) {
                         // TODO: handle exception
-                        Toast.makeText(getActivity(), "Email and Code do not match", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginFragment.this, "Email and Code do not match", Toast.LENGTH_SHORT).show();
                     }
 
                 }
             }, url+"/index.php?user=" + ed1.getText().toString().trim() + "&pass=" + ed2.getText().toString().trim(), 1).execute();
-        }catch (Exception e){ Toast.makeText(getActivity(), "Invalid character found", Toast.LENGTH_SHORT).show();}
+        }catch (Exception e){ Toast.makeText(LoginFragment.this, "Invalid character found", Toast.LENGTH_SHORT).show();}
     }
 }

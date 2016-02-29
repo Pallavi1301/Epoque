@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity
         Fragment fragment = new Fragment();
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction ft = fragmentManager.beginTransaction();
-            fragment=new Contentmain_Frag();
+        fragment=new Contentmain_Frag();
         ft.replace(R.id.container, fragment);
         ft.commit();
 
@@ -86,9 +86,9 @@ public class MainActivity extends AppCompatActivity
         FragmentTransaction ft = fragmentManager.beginTransaction();
 
         if (id == R.id.nav_camara) {
-
+            fragment=new Contentmain_Frag();
         } else if (id == R.id.nav_gallery) {
-            fragment=new RegisterFragment();
+            fragment=new EventRegistration();
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {

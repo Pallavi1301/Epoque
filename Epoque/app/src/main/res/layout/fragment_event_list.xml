@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.pallavigupta.epoque.EventList"
+    android:background="@drawable/login1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/tool">
+        <include android:id="@+id/toolbar"
+            layout="@layout/toolbar"></include>
+    </LinearLayout>
+    <ListView
+        android:layout_below="@+id/tool"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:divider="#00000000"
+        android:dividerHeight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        android:id="@+id/List"></ListView>
+
+</RelativeLayout>
