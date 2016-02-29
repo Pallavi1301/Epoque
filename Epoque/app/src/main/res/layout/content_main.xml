@@ -8,10 +8,6 @@
     android:paddingBottom="50dip"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity">
-    <include
-        layout="@layout/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -21,7 +17,7 @@
         android:weightSum="1">
 
         <Button
-            android:id="@+id/btnDismissDialogMessage"
+            android:id="@+id/button"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_gravity="center"
@@ -40,7 +36,7 @@
             android:background="#ffffff" />
 
         <Button
-            android:id="@+id/btnDialogAction"
+            android:id="@+id/button1"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_gravity="center"
