@@ -64,6 +64,7 @@
             android:textColor="#ffffff"
             android:background="#e603ac89"
             android:elevation="2dip"
+            android:id="@+id/btnlog"
             android:layout_alignParentBottom="true"
             />
 

@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_camara) {
 
         } else if (id == R.id.nav_gallery) {
-            fragment=new LoginFragment();
+            fragment=new RegisterFragment();
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
