@@ -4,38 +4,47 @@
     android:layout_height="match_parent"
     android:background="@drawable/login1">
 
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <TextView
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="?attr/selectableItemBackground">
+
+        <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dip"
         android:textSize="25sp"
         android:fontFamily="serif"
         android:text="Event Registration"
-        android:background="@drawable/textview_background"
+        android:background="@drawable/textback"
         android:layout_marginTop="25dip"
         android:id="@+id/textView2"
         android:textColor="#aac0c0c0"
-        android:layout_gravity="center_horizontal" />
+            android:layout_centerHorizontal="true"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="20dip"
         android:layout_marginRight="20dip"
-        android:layout_marginBottom="65dip"
-        android:layout_marginTop="20dip"
+        android:layout_marginBottom="8dip"
+        android:layout_marginTop="8dip"
         android:background="#772d2d2d"
+        android:layout_below="@+id/textView2"
         >
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView"
             android:src="@drawable/logo_1"
-            android:layout_marginTop="2dip"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="40dip" />
-
+            android:layout_marginTop="8dip"
+            android:layout_marginLeft="16dip"
+        />
         <Button
             android:id="@+id/button1"
             android:layout_width="match_parent"
@@ -84,5 +93,6 @@
             android:elevation="4dip"
             />
     </RelativeLayout>
-
+        </RelativeLayout>
+</ScrollView>
 </LinearLayout>

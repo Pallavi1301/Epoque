@@ -18,8 +18,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingBottom="50dip"
-        android:background="@drawable/login1">
-
+        android:background="?attr/selectableItemBackground"
+        >
 
     <ImageView
         android:layout_width="wrap_content"
@@ -27,7 +27,7 @@
         android:src="@drawable/logo_1"
         android:id="@+id/imageView3"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp" />
+        android:layout_marginTop="32dip" />
     <TextView
         android:id="@+id/text"
         android:layout_width="match_parent"
@@ -73,7 +73,7 @@
         android:layout_marginRight="8dip"
         android:layout_marginLeft="8dip"
         android:layout_marginTop="48dip"
-        android:background="@drawable/textview_background"
+        android:background="@drawable/textback"
         android:layout_below="@+id/text2"
         android:id="@+id/button"
         />
@@ -97,22 +97,9 @@
         android:layout_marginLeft="8dip"
         android:layout_marginRight="8dip"
         android:layout_below="@+id/text1"
-        android:background="@drawable/textview_background"
+        android:background="@drawable/textback"
         android:layout_marginTop="16dip"
         android:id="@+id/button2"/>
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="0dip"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:layout_weight="0.5"
-        android:background="#e603ac89"
-        android:gravity="center"
-        android:padding="8dp"
-        android:text="Register"
-        android:textColor="#ffffff"
-        android:textSize="20sp">
-    </Button>
     </RelativeLayout>
 </ScrollView>
-</>
+</RelativeLayout>
