@@ -4,16 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dip"
+        android:background="@drawable/textback">
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
         android:id="@+id/logo"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name"
+        android:text="NAME"
+        android:layout_marginLeft="16dp"
+        android:textSize="24sp"
         android:layout_toRightOf="@+id/logo"
         android:id="@+id/txt_name"
         />
@@ -21,8 +30,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="date"
+        android:text="DATE"
         android:layout_toRightOf="@+id/logo"
+        android:layout_marginLeft="16dip"
+        android:textSize="20sp"
         android:layout_below="@+id/txt_name"
         android:id="@+id/txt_date"
         />
@@ -30,9 +41,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="time"
+        android:text="TIME"
         android:layout_below="@+id/txt_date"
         android:layout_toRightOf="@+id/logo"
+        android:textSize="20sp"
+        android:layout_marginLeft="16dip"
         android:id="@+id/txt_time"
         />
 
@@ -40,9 +53,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/logo"
-        android:text="venue"
+        android:text="VENUE"
+        android:textSize="16sp"
+        android:layout_marginLeft="16dip"
         android:layout_below="@id/txt_time"
         android:id="@+id/txt_venue"
         />
-
+</RelativeLayout>
 </RelativeLayout>
