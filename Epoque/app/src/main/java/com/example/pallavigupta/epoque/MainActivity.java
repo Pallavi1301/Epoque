@@ -12,11 +12,8 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -114,8 +111,6 @@ public class MainActivity extends AppCompatActivity
         }else if (id == R.id.nav_register) {
 
         }else if (id == R.id.nav_invitation) {
-
-        }else if (id == R.id.nav_notification) {
 
         }else if (id == R.id.nav_logout) {
 

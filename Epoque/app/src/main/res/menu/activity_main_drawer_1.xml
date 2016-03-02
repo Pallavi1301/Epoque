@@ -9,8 +9,6 @@
             android:title="Event Schedule" />
         <item android:id="@+id/nav_register" android:icon="@drawable/mobile"
             android:title="Register" />
-        <item android:id="@+id/nav_notification" android:icon="@drawable/mobile"
-            android:title="Notification" />
         <item android:id="@+id/nav_invitation" android:icon="@drawable/mobile"
             android:title="Invitation" />
         <item android:id="@+id/nav_rules" android:icon="@drawable/mobile"
