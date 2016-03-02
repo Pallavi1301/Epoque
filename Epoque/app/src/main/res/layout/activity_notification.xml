@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/texture_grey">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -11,16 +12,30 @@
             layout="@layout/toolbar"></include>
     </LinearLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:text=" Notifications "
+        android:textColor="#03ac89"
+        android:textSize="24sp"
+        android:id="@+id/text1"
+        android:layout_marginTop="8dip"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/textback"/>
 
     <ListView
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
-        android:divider="#00000000"
-        android:dividerHeight="8dp"
+        android:divider="#22000000"
+        android:dividerHeight="1dp"
+        android:padding="8dip"
+        android:background="#22000000"
         android:layout_marginTop="8dp"
         android:layout_height="wrap_content"
         android:choiceMode="singleChoice"
-        android:layout_below="@+id/tool"
-        android:id="@+id/List"></ListView>
+        android:layout_below="@+id/text1"
+        android:id="@+id/List">
+    </ListView>
 
-</RelativeLayout>
+</LinearLayout>

@@ -7,7 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="8dip"
-        android:text="Feculty Apex"
+        android:text="Faculty Apex"
         android:textColor="#03ac89"
         android:textSize="24sp"
         android:id="@+id/text1"
@@ -18,6 +18,8 @@
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:divider="#22000000"
+        android:dividerHeight="2dip"
         android:id="@+id/list_apex"
         android:padding="4dip"
         android:background="#22000000"
