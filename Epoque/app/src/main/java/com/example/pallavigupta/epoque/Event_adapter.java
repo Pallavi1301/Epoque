@@ -1,13 +1,18 @@
 package com.example.pallavigupta.epoque;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import org.json.JSONException;
 
 import java.util.List;
 
@@ -40,9 +45,12 @@ public class Event_adapter extends BaseAdapter  {    final Context context;
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        Event_list_Element entry = listElement.get(position);
+        final Event_list_Element entry = listElement.get(position);
         LayoutInflater inflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+        final SharedPreferences sp =context.getSharedPreferences("Epoque2k16", Context.MODE_PRIVATE);
+
         convertView = inflater.inflate(R.layout.event_row_list, null);
         TextView tvName = (TextView) convertView.findViewById(R.id.txt_name);
         tvName.setText(entry.getName());
@@ -52,6 +60,32 @@ public class Event_adapter extends BaseAdapter  {    final Context context;
         tvTime.setText(entry.getTime());
         TextView tvVenue = (TextView) convertView.findViewById(R.id.txt_venue);
         tvVenue.setText(entry.getVenue());
+
+        Button btn;
+        btn = (Button)convertView.findViewById(R.id.button_reg);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            Constant co=new Constant();
+            String url=co.url;
+            @Override
+            public void onClick(View v) {
+             if(entry.getMax()==1)
+             {
+                 new HitJSPService(context, null, new TaskCompleted() {
+                     @Override
+                     public void onTaskCompleted(String result, int resultType) throws JSONException {
+
+                     }
+                 },url+"/Other.php?func=2&id="+sp.getInt("id",0)+"&event="+entry.getID(),1);
+             }
+                else {
+                 Intent i = new Intent(context,group_reg.class);
+                 i.putExtra("event",entry.getID());
+                 context.startActivity(i);
+
+             }
+            }
+        });
 
         return convertView;
     }
