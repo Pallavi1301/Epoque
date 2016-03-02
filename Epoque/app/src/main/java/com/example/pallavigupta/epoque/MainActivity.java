@@ -1,7 +1,6 @@
 package com.example.pallavigupta.epoque;
 
-import android.content.Context;
-import android.content.SharedPreferences;
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
@@ -17,13 +16,12 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    SharedPreferences sp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        sp=getSharedPreferences("Epoque2k16", Context.MODE_PRIVATE);
+
         Fragment fragment = new Fragment();
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction ft = fragmentManager.beginTransaction();
@@ -31,7 +29,7 @@ public class MainActivity extends AppCompatActivity
         ft.replace(R.id.container, fragment);
         ft.commit();
 
-        //LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -42,11 +40,6 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        if(sp.getBoolean("isTrue",false)){
-            navigationView.inflateMenu(R.menu.activity_main_drawer_1);
-        }
-        else
-            navigationView.inflateMenu(R.menu.activity_main_drawer);
         navigationView.setNavigationItemSelectedListener(this);
 
  }
@@ -75,11 +68,6 @@ public class MainActivity extends AppCompatActivity
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -95,7 +83,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             fragment=new Contentmain_Frag();
         } else if (id == R.id.nav_apex) {
-            fragment=new EventRegistration();
+
         } else if (id == R.id.nav_schedule) {
 
         } else if (id == R.id.nav_rules) {
@@ -104,14 +92,19 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_core_team) {
 
-        }else if (id == R.id.nav_apex_student) {
+        } else if (id == R.id.nav_apex_student) {
 
-        }else if (id == R.id.nav_apex_faculty) {
+        } else if (id == R.id.nav_apex_faculty) {
 
-        }else if (id == R.id.nav_register) {
+        } else if (id == R.id.nav_register) {
 
-        }else if (id == R.id.nav_invitation) {
+        } else if (id == R.id.nav_invitation) {
 
+<<<<<<< HEAD
+=======
+        } else if (id == R.id.nav_notification) {
+
+>>>>>>> feb303c1a593735245f3352e3837dcbe16055cbd
         }else if (id == R.id.nav_logout) {
 
         }

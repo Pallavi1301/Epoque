@@ -10,10 +10,11 @@ public class Event_list_Element  {
     String Time;
     String Venue;
     int Max,Min;
+    int Type;
 
     int ID;
 
-    public Event_list_Element(String Time,String Name,String Date,String Venue,int ID,int Max,int Min)
+    public Event_list_Element(String Time,String Name,String Date,String Venue,int ID,int Max,int Min,int Type)
     {
         this.Name=Name;
         this.Date=Date;
@@ -22,6 +23,7 @@ public class Event_list_Element  {
         this.ID=ID;
         this.Min=Min;
         this.Max=Max;
+        this.Type=Type;
     }
 
     public String getName() {
@@ -50,5 +52,9 @@ public class Event_list_Element  {
 
     public int getMin() {
         return Min;
+    }
+
+    public int getType() {
+        return Type;
     }
 }
