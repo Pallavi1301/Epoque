@@ -45,7 +45,7 @@ public class LoginFragment extends AppCompatActivity {
     {
         Constant co=new Constant();
         String url=co.url;
-        EditText ed1,ed2;
+        final EditText ed1,ed2;
         ed1= (EditText) findViewById(R.id.editText);
         ed2= (EditText) findViewById(R.id.editText1);
         try {
@@ -58,6 +58,7 @@ public class LoginFragment extends AppCompatActivity {
                         JSONArray ja = jo.getJSONArray("result");
                         JSONObject jo1 = ja.getJSONObject(0);
                         sp.edit().putString("dept", jo1.getString("id")).commit();
+                        sp.edit().putString("id", ed1.getText().toString().trim()).commit();
                         sp.edit().putBoolean("isTrue", true).commit();
                         Toast.makeText(LoginFragment.this, "Login with Id "+Integer.parseInt(jo1.getString("id")), Toast.LENGTH_SHORT).show();
                         } catch (Exception e) {
