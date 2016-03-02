@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!--
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+-->
     <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dip"
@@ -65,10 +66,10 @@
             android:layout_height="wrap_content"
             android:text="REGISTER"
             android:layout_marginTop="16dp"
-            android:textSize="16dp"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
             android:id="@+id/button_reg"
             android:layout_below="@+id/txt_venue"
             android:background="#03ac89"
             />
-</RelativeLayout>
 </RelativeLayout>
