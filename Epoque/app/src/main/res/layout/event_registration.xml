@@ -43,7 +43,7 @@
             android:id="@+id/imageView"
             android:src="@drawable/logo_1"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="8dip"
+            android:layout_marginTop="2dip"
             android:layout_marginLeft="16dip"
         />
         <Button
