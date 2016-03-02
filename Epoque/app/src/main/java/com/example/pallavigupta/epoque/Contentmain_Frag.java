@@ -25,7 +25,7 @@ public class Contentmain_Frag extends Fragment {
 
         Button login,reg;
         login = (Button)getActivity().findViewById(R.id.button);
-        reg = (Button)getActivity().findViewById(R.id.button1);
+        reg = (Button)getActivity().findViewById(R.id.button2);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
