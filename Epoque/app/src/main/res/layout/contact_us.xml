@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/texture_grey">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dip"
+    android:background="#88000000">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For Any Queries, Contact Us at : "
+        android:textSize="24sp"
+        android:layout_marginTop="8dip"
+        android:textColor="#03ac89"
+        android:id="@+id/text1"
+        android:layout_gravity="center_horizontal"
+        android:padding="8dip"/>
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#88000000"
+        android:layout_marginTop="32dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:padding="4dip">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_height="wrap_content"
+        android:text="Apar Vashistha (+91) 8395869559"
+        android:textSize="20sp"
+        android:id="@+id/text2"
+        android:layout_marginTop="18dip"
+        android:textColor="#FFFFFF"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_height="wrap_content"
+        android:text="Ritika Garg  (+91) 9540502881"
+        android:textSize="20sp"
+        android:id="@+id/text3"
+        android:layout_below="@+id/text2"
+        android:layout_marginTop="16dip"
+        android:textColor="#FFFFFF"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_height="wrap_content"
+        android:text="Anshi Shrivastava (+91) 8439968477"
+        android:textSize="20sp"
+        android:id="@+id/text4"
+        android:layout_below="@id/text3"
+        android:layout_marginTop="16dip"
+        android:textColor="#FFFFFF"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_height="wrap_content"
+        android:text="Or Drop Mail At  :  erp@kiet.edu"
+        android:textSize="20sp"
+        android:layout_below="@+id/text4"
+        android:id="@+id/text5"
+        android:layout_marginTop="16dip"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dip"
+        />
+    </RelativeLayout>
+</LinearLayout>
