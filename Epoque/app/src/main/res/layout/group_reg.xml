@@ -27,7 +27,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/edit_name"/>
 
-
     <EditText
         android:id="@+id/edit_size"
         android:hint="Team Size"
