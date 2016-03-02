@@ -24,7 +24,7 @@
         android:layout_marginTop="25dip"
         android:id="@+id/textView2"
         android:textColor="#aac0c0c0"
-            android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -33,6 +33,7 @@
         android:layout_marginRight="20dip"
         android:layout_marginBottom="8dip"
         android:layout_marginTop="8dip"
+        android:padding="16dip"
         android:background="#772d2d2d"
         android:layout_below="@+id/textView2"
         >

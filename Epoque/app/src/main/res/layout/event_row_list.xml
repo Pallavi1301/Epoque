@@ -59,5 +59,16 @@
         android:layout_below="@id/txt_time"
         android:id="@+id/txt_venue"
         />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:layout_marginTop="16dp"
+            android:textSize="16dp"
+            android:id="@+id/button_reg"
+            android:layout_below="@+id/txt_venue"
+            android:background="#03ac89"
+            />
 </RelativeLayout>
 </RelativeLayout>
