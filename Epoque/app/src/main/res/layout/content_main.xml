@@ -62,7 +62,7 @@
         android:fontFamily="serif"
         android:layout_marginTop="2dp"
         android:textSize="20dp"
-        android:text="19th and 20th March"/>
+        android:text="18th and 19th March"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

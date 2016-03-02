@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/texture_grey">
+    android:background="@drawable/preview7">
 <RelativeLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -19,58 +19,95 @@
         android:layout_gravity="center_horizontal"
         android:padding="8dip"/>
 </RelativeLayout>
+
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#88000000"
         android:layout_marginTop="32dip"
-        android:layout_marginLeft="16dip"
-        android:layout_marginRight="16dip"
-        android:padding="4dip">
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:padding="12dip">
     <TextView
         android:layout_width="wrap_content"
         android:layout_marginLeft="12dip"
         android:layout_height="wrap_content"
-        android:text="Apar Vashistha (+91) 8395869559"
-        android:textSize="20sp"
+        android:text="Apar Vashistha"
+        android:textSize="24sp"
         android:id="@+id/text2"
-        android:layout_marginTop="18dip"
+        android:layout_marginTop="10dip"
         android:textColor="#FFFFFF"
         />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(+91) 8395869559"
+            android:layout_marginLeft="12dip"
+            android:id="@+id/mob1"
+            android:textSize="20sp"
+            android:textColor="#c0c0c0"
+            android:layout_below="@id/text2"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_marginLeft="12dip"
         android:layout_height="wrap_content"
-        android:text="Ritika Garg  (+91) 9540502881"
-        android:textSize="20sp"
+        android:text="Ritika Garg"
+        android:textSize="24sp"
         android:id="@+id/text3"
-        android:layout_below="@+id/text2"
+        android:layout_below="@+id/mob1"
         android:layout_marginTop="16dip"
         android:textColor="#FFFFFF"
         />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(+91) 9540502881"
+            android:id="@+id/mob2"
+            android:textSize="20sp"
+            android:textColor="#c0c0c0"
+            android:layout_marginLeft="12dip"
+            android:layout_below="@id/text3"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_marginLeft="12dip"
         android:layout_height="wrap_content"
-        android:text="Anshi Shrivastava (+91) 8439968477"
-        android:textSize="20sp"
+        android:text="Anshi Shrivastava"
+        android:textSize="24sp"
         android:id="@+id/text4"
-        android:layout_below="@id/text3"
+        android:layout_below="@id/mob2"
         android:layout_marginTop="16dip"
         android:textColor="#FFFFFF"
         />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="(+91) 8439968477"
+            android:textColor="#c0c0c0"
+            android:id="@+id/mob3"
+            android:layout_marginLeft="12dip"
 
+            android:layout_below="@id/text4"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_marginLeft="12dip"
         android:layout_height="wrap_content"
-        android:text="Or Drop Mail At  :  erp@kiet.edu"
-        android:textSize="20sp"
-        android:layout_below="@+id/text4"
+        android:text="Or Drop Mail At :"
+        android:textSize="24sp"
+        android:layout_below="@+id/mob3"
         android:id="@+id/text5"
         android:layout_marginTop="16dip"
         android:textColor="#FFFFFF"
-        android:layout_marginBottom="16dip"
         />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:id="@+id/mail"
+            android:textColor="#c0c0c0"
+            android:text="erp@kiet.edu"
+            android:layout_marginBottom="10dip"
+            android:textSize="22sp"
+            android:layout_below="@+id/text5"/>
     </RelativeLayout>
 </LinearLayout>

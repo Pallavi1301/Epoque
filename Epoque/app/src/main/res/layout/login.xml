@@ -59,18 +59,6 @@
             android:textColorHint="#c3c3c3"
             android:id="@+id/editText1"
             android:singleLine="true"/>
-        <TextView
-            android:id="@+id/editText2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/editText1"
-            android:layout_marginTop="20dip"
-            android:padding="5dip"
-            android:text="Forgot Password?"
-            android:textColor="#C0C0C0"
-            android:textSize="16sp"
-            />
 
         <Button
             android:id="@+id/button"

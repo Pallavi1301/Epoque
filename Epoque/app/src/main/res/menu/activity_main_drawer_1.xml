@@ -3,17 +3,17 @@
 
     <group android:checkableBehavior="single">
 
-        <item android:id="@+id/nav_home" android:icon="@android:drawable/ic_menu_camera"
+        <item android:id="@+id/nav_home" android:icon="@drawable/home"
             android:title="Home" />
-        <item android:id="@+id/nav_schedule" android:icon="@android:drawable/ic_menu_slideshow"
+        <item android:id="@+id/nav_schedule" android:icon="@drawable/schedule"
             android:title="Event Schedule" />
-        <item android:id="@+id/nav_register" android:icon="@drawable/mobile"
-            android:title="Register" />
-        <item android:id="@+id/nav_invitation" android:icon="@drawable/mobile"
+        <item android:id="@+id/nav_register" android:icon="@drawable/register"
+            android:title="Events Rgistration" />
+        <item android:id="@+id/nav_invitation" android:icon="@drawable/invite"
             android:title="Invitation" />
-        <item android:id="@+id/nav_rules" android:icon="@drawable/mobile"
+        <item android:id="@+id/nav_rules" android:icon="@drawable/rules"
             android:title="Rules" />
-        <item android:id="@+id/nav_contact_us" android:icon="@drawable/mobile"
+        <item android:id="@+id/nav_contact_us" android:icon="@drawable/contact_us"
             android:title="Contact Us" />
     </group>
     <item android:title="Members">
@@ -22,14 +22,14 @@
                 android:icon="@drawable/mobile"
                 android:title="Core Team"/>
             <item android:id="@+id/nav_apex_student"
-                android:icon="@drawable/mobile"
+                android:icon="@drawable/student"
                 android:title="Student Apex"/>
             <item android:id="@+id/nav_apex_faculty"
-                android:icon="@drawable/mobile"
+                android:icon="@drawable/teacher"
                 android:title="Faculty Apex"/>
         </menu>
     </item>
 
     <item android:title="Logout" android:id="@+id/nav_logout"
-        android:icon="@drawable/mobile"/>
+        android:icon="@drawable/logout"/>
 </menu>
