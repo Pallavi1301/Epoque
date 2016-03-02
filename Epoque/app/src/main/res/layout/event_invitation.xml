@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/preview3">
+    android:background="@drawable/texture_grey">
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/txt"
+        android:layout_marginTop="8dip"
+        android:layout_height="wrap_content"
+        android:text="INVITATIONS"
+        android:gravity="center_horizontal"
+        android:textColor="#03ac89"
+        android:textSize="24sp"/>
 
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#"
+        android:background="#33d3d3d3"
+        android:layout_below="@+id/txt"
+        android:layout_marginTop="10dip"
         android:id="@+id/list">
 
     </ListView>
-</LinearLayout>
+
+</RelativeLayout>

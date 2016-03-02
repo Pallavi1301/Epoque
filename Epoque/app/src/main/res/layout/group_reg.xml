@@ -4,23 +4,24 @@
     android:background="@drawable/preview5"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+<!--
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:id="@+id/tool">
+
         <include android:id="@+id/toolbar"
             layout="@layout/toolbar"></include>
-    </LinearLayout>
 
+    </LinearLayout>
+-->
     <EditText
         android:id="@+id/edit_name"
         android:hint="Team Name"
         android:background="#44d3d3d3"
         android:layout_marginLeft="12dip"
         android:layout_marginRight="12dip"
-        android:layout_marginTop="10dip"
         android:padding="8dip"
         android:textColor="#ffffff"
         android:textStyle="bold"

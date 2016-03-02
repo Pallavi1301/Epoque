@@ -2,15 +2,18 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/abc_et_background"
     android:padding="16dip">
 <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="Team"
+    android:textColor="#ffffff"
     android:textSize="24sp"
     android:id="@+id/txt1"/>
     <TextView
         android:layout_width="match_parent"
+        android:textColor="#c0c0c0"
         android:layout_height="wrap_content"
         android:text="Details"
         android:id="@+id/txt2"
