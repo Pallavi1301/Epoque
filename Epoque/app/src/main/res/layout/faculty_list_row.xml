@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dip"
+    android:background="#33000000">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:id="@+id/name"
+        android:textColor="#000000"
+        android:text="Name : Pallavi Gupta"
+        android:singleLine="true"/>
+    <TextView
+        android:id="@+id/dept"
+        android:layout_below="@+id/name"
+        android:text="Department : CSE"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact No. : 8791913229"
+        android:layout_below="@id/dept"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:id="@+id/contact"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail id : pallavigupta1301@gmail.com"
+        android:textSize="18sp"
+        android:layout_below="@+id/contact"
+        android:textColor="#ffffff"/>
+</RelativeLayout>
