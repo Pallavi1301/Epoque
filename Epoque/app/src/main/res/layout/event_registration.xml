@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView"
             android:layout_marginTop="35dip"
-            android:text="Institute Level"
+            android:text="Department"
             android:layout_marginLeft="20dip"
             android:layout_marginRight="20dip"
             android:textSize="18sp"
