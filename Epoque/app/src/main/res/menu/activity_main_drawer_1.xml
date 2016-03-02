@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/nav_home" android:icon="@android:drawable/ic_menu_camera"
+            android:title="Home" />
+        <item android:id="@+id/nav_schedule" android:icon="@android:drawable/ic_menu_slideshow"
+            android:title="Event Schedule" />
+        <item android:id="@+id/nav_register" android:icon="@drawable/mobile"
+            android:title="Register" />
+        <item android:id="@+id/nav_notification" android:icon="@drawable/mobile"
+            android:title="Notification" />
+        <item android:id="@+id/nav_invitation" android:icon="@drawable/mobile"
+            android:title="Invitation" />
+        <item android:id="@+id/nav_rules" android:icon="@drawable/mobile"
+            android:title="Rules" />
+        <item android:id="@+id/nav_contact_us" android:icon="@drawable/mobile"
+            android:title="Contact Us" />
+    </group>
+    <item android:title="Members">
+        <menu>
+            <item android:id="@+id/nav_core_team"
+                android:icon="@drawable/mobile"
+                android:title="Core Team"/>
+            <item android:id="@+id/nav_apex_student"
+                android:icon="@drawable/mobile"
+                android:title="Student Apex"/>
+            <item android:id="@+id/nav_apex_faculty"
+                android:icon="@drawable/mobile"
+                android:title="Faculty Apex"/>
+        </menu>
+    </item>
+
+    <item android:title="Logout" android:id="@+id/nav_logout"
+        android:icon="@drawable/mobile"/>
+</menu>

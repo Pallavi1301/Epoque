@@ -45,6 +45,11 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        if(sp.getBoolean("isTrue",false)){
+            navigationView.inflateMenu(R.menu.activity_main_drawer_1);
+        }
+        else
+            navigationView.inflateMenu(R.menu.activity_main_drawer);
         navigationView.setNavigationItemSelectedListener(this);
 
  }
@@ -105,6 +110,14 @@ public class MainActivity extends AppCompatActivity
         }else if (id == R.id.nav_apex_student) {
 
         }else if (id == R.id.nav_apex_faculty) {
+
+        }else if (id == R.id.nav_register) {
+
+        }else if (id == R.id.nav_invitation) {
+
+        }else if (id == R.id.nav_notification) {
+
+        }else if (id == R.id.nav_logout) {
 
         }
 
