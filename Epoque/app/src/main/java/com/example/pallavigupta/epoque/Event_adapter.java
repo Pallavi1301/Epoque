@@ -53,13 +53,13 @@ public class Event_adapter extends BaseAdapter  {    final Context context;
 
         convertView = inflater.inflate(R.layout.event_row_list, null);
         TextView tvName = (TextView) convertView.findViewById(R.id.txt_name);
-        tvName.setText(entry.getName());
+        tvName.setText("Name: "+entry.getName());
         TextView tvDate = (TextView) convertView.findViewById(R.id.txt_date);
-        tvDate.setText(entry.getDate());
+        tvDate.setText("Date: "+entry.getDate());
         TextView tvTime = (TextView) convertView.findViewById(R.id.txt_time);
-        tvTime.setText(entry.getTime());
+        tvTime.setText("Time: "+entry.getTime());
         TextView tvVenue = (TextView) convertView.findViewById(R.id.txt_venue);
-        tvVenue.setText(entry.getVenue());
+        tvVenue.setText("Venue: "+entry.getVenue());
 
         Button btn;
         btn = (Button)convertView.findViewById(R.id.button_reg);
@@ -74,7 +74,6 @@ public class Event_adapter extends BaseAdapter  {    final Context context;
                  new HitJSPService(context, null, new TaskCompleted() {
                      @Override
                      public void onTaskCompleted(String result, int resultType) throws JSONException {
-
                      }
                  },url+"/Other.php?func=2&id="+sp.getInt("id",0)+"&event="+entry.getID(),1);
              }
@@ -82,12 +81,10 @@ public class Event_adapter extends BaseAdapter  {    final Context context;
                  Intent i = new Intent(context,group_reg.class);
                  i.putExtra("event",entry.getID());
                  context.startActivity(i);
-
              }
             }
         });
 
         return convertView;
     }
-
 }
