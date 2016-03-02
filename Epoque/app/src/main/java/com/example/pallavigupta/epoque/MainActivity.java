@@ -100,11 +100,6 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_invitation) {
 
-<<<<<<< HEAD
-=======
-        } else if (id == R.id.nav_notification) {
-
->>>>>>> feb303c1a593735245f3352e3837dcbe16055cbd
         }else if (id == R.id.nav_logout) {
 
         }
